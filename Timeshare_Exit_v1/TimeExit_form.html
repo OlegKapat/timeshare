@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Timeshare Exit</title>
+  <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/css/app.min.css" />
+  <link rel="stylesheet" href="assets/bundles/datatables/datatables.min.css">
+  <link rel="stylesheet" href="assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/bundles/jqvmap/dist/jqvmap.min.css" />
+  <link rel="stylesheet" href="assets/bundles/weather-icon/css/weather-icons.min.css" />
+  <link rel="stylesheet" href="assets/bundles/weather-icon/css/weather-icons-wind.min.css" />
+  <link rel="stylesheet" href="assets/bundles/summernote/summernote-bs4.css" />
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+
+
+<body>
+  <div class="loader"></div>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+		
+		<div class="main-sidebar sidebar-style-2">
+			<aside id="sidebar-wrapper">
+				<div class="sidebar-brand">
+					<a href="index.html"><img alt="image" src="assets/img/main_logo.png" class="header-logo" /></a>
+				</div>
+			  
+				<!--Left Sidebar Navigation-->
+				<ul class="sidebar-menu">
+					<li class="menu-header">Navigation</li>
+					<li class="dropdown active">
+					  <a href="index.html" class="nav-link"><i data-feather="monitor"></i><span>Transfer Sheet</span></a>
+					</li>
+				</ul>
+			</aside>
+		  </div>
+		  
+		  
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-body">
+			<form action="" method="">
+				<div class="row mt-sm-4">
+				
+					<div class="col-12 col-md-12 col-lg-12">
+						<div class="card PersonalInformation_Block">
+							  <div class="card-header">
+								<h4>Transfer Sheet</h4>
+							  </div>
+							  
+							  <div class="card-body">
+								
+								<div class="TimeExit_FormBlock">
+									<div class="PersonalInformation_row">
+										<div class="row">
+											<div class="col-lg-6">
+												<div class="DateRefTop_row">
+													<div class="row">
+														<div class="col-lg-6">
+															<div class="form-group">
+																<label for="inpuDatePanel">Date:</label>
+																<input type="text" class="form-control" id="inpuDatePanel" placeholder="">
+															</div>											
+														</div>
+														<div class="col-lg-6">
+															<div class="form-group">
+																<label for="inpuDatePanel">Rep:</label>
+																<input type="text" class="form-control" id="inpuDatePanel" placeholder="">
+															</div>										
+														</div>
+														<div class="col-lg-12">
+															<div class="form-group">
+																<label for="inpuDatePanel">List:</label>
+																<input type="text" class="form-control" id="inpuDatePanel" placeholder="">
+															</div>										
+														</div>										
+													</div>
+												</div>
+
+												<div class="PersonaInformation_block">
+													<div class="row">
+														<div class="col-lg-6">
+															<div class="form-group">
+																<label for="inpuDatePanel">Client First name:</label>
+																<input type="text" class="form-control" id="inpuDatePanel" placeholder="">
+															</div>											
+														</div>
+														<div class="col-lg-6">
+															<div class="form-group">
+																<label for="inpuDatePanel">Client Last name:</label>
+																<input type="text" class="form-control" id="inpuDatePanel" placeholder="">
+															</div>										
+														</div>
+														<div class="col-lg-12">
+															<div class="form-group">
+																<label for="inpuDatePanel">Spouse First name:</label>
+																<input type="text" class="form-control" id="inpuDatePanel" placeholder="">
+															</div>										
+														</div>
+														<div class="col-lg-12">
+															<div class="form-group">
+																<label for="inpuDatePanel">Phone Number:</label>
+																<input type="text" class="form-control" id="inpuDatePanel" placeholder="">
+															</div>										
+														</div>										
+													</div>
+												</div>
+
+												<div class="Note_DetailsBlock">
+													<div class="form-group">
+														<label for="inputMessage">Notes:</label>
+														<textarea class="form-control"></textarea>
+													</div> 													
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<h3 class="questionBlock_Title">QUALIFIYING QUESTIONS:</h3>
+												<div class="question_LineBlock">
+													<h4>ARE YOU THE DEEDED OWNER OF TIMESHARE?</h4>
+													<div class="Question_Checkbox">
+														<div class="custom-checkbox custom-checkbox-table custom-control">
+															<input type="checkbox" class="custom-control-input" id="checkbox-all1">
+															<label for="checkbox-all1" class="custom-control-label">&nbsp; Yes</label>
+														</div>
+														<div class="custom-checkbox custom-checkbox-table custom-control">
+															<input type="checkbox" class="custom-control-input" id="checkbox-all2">
+															<label for="checkbox-all2" class="custom-control-label">&nbsp; No</label>
+														</div>														
+													</div>													
+												</div>
+
+												<div class="question_LineBlock">
+													<h4>ARE YOU THE ONLY ONE ON THE DEED? </h4>
+													<div class="Question_Checkbox">
+														<div class="row deedHolder_row">
+															<div class="col-lg-12 col-xl-12">
+																<div class="custom-checkbox custom-checkbox-table custom-control">
+																	<input type="checkbox" class="custom-control-input" id="checkbox-all3">
+																	<label for="checkbox-all3" class="custom-control-label">&nbsp; Yes</label>
+																</div>
+																<div class="custom-checkbox custom-checkbox-table custom-control">
+																	<input type="checkbox" class="custom-control-input" id="checkbox-all4">
+																	<label for="checkbox-all4" class="custom-control-label">&nbsp; No</label>
+																</div>
+																
+																<div class="custom-checkbox custom-checkbox-table custom-control OtherDeed_HolderInput">
+																	<input type="checkbox" class="custom-control-input" id="checkbox-all5">
+																	<div class="form-group">
+																		<input type="text" class="form-control" id="inpuDatePanel" placeholder="OTHER DEED HOLDERS">
+																	</div>
+																</div>																
+															</div>
+														</div>	
+													</div>													
+												</div>
+												<div class="question_LineBlock">
+													<h4>WHAT DEVELOPERS DO YOU CURRENTLY OWN WITH? </h4>
+													<div class="Question_Checkbox">
+														<div class="form-group">
+															<input type="text" class="form-control" id="inpuDatePanel" placeholder="">
+														</div>														
+													</div>													
+												</div>
+												<div class="question_LineBlock">
+													<div class="row">
+														<div class="col-xl-6">
+															<h4>DO YOU STILL MAKE MORGATE PAYMENTS? </h4>
+															<div class="Question_Checkbox">
+																<div class="custom-checkbox custom-checkbox-table custom-control">
+																	<input type="checkbox" class="custom-control-input" id="checkbox-all7">
+																	<label for="checkbox-all7" class="custom-control-label">&nbsp; Yes</label>
+																</div>
+																<div class="custom-checkbox custom-checkbox-table custom-control">
+																	<input type="checkbox" class="custom-control-input" id="checkbox-all8">
+																	<label for="checkbox-all8" class="custom-control-label">&nbsp; No</label>
+																</div>														
+															</div>															
+														</div>
+
+														<div class="col-xl-6">
+															<h4>WHAT IS YOUR CURRENT BALANCE?</h4>
+															<div class="Question_Checkbox">
+																<div class="form-group">
+																	<input type="text" class="form-control" id="inpuDatePanel" placeholder="">
+																</div>														
+															</div>																
+														</div>
+													</div>
+													
+												</div>
+												<div class="question_LineBlock">
+													<h4>WHAT IS YOUR CURRENT MAINTENANCE FEE?</h4>
+													<div class="Question_Checkbox">
+														<div class="row no-gutters Maintenannce_FeeRow">
+															<div class="col-4">
+																<div class="form-group">
+																	<input type="text" class="form-control" id="inpuDatePanel" placeholder="">
+																</div>																
+															</div>
+															<div class="col-8"><span class="LabelNotice_Text"> YEARLY / MONTHLY</span></div>															
+														</div>
+																												
+													</div>													
+												</div>
+												<div class="question_LineBlock">
+													<h4>ARE YOU CURRENT WITH YOUR PAYMENTS?</h4>
+													<div class="Question_Checkbox">
+														<div class="custom-checkbox custom-checkbox-table custom-control">
+															<input type="checkbox" class="custom-control-input" id="checkbox-all13">
+															<label for="checkbox-all13" class="custom-control-label">&nbsp; Yes</label>
+														</div>
+														<div class="custom-checkbox custom-checkbox-table custom-control">
+															<input type="checkbox" class="custom-control-input" id="checkbox-all14">
+															<label for="checkbox-all14" class="custom-control-label">&nbsp; No</label>
+														</div>														
+													</div>													
+												</div>
+												<div class="question_LineBlock">
+													<h4>IF WE’RE ABLE TO ACCEPT YOUR CASE, ARE YOU FINANCIALLY CAPABLE OF BRINGING ALL PAST DUE PAYMENTS CURRENT?</h4>
+													<div class="Question_Checkbox">
+														<div class="custom-checkbox custom-checkbox-table custom-control">
+															<input type="checkbox" class="custom-control-input" id="checkbox-all11">
+															<label for="checkbox-all11" class="custom-control-label">&nbsp; Yes</label>
+														</div>
+														<div class="custom-checkbox custom-checkbox-table custom-control">
+															<input type="checkbox" class="custom-control-input" id="checkbox-all12">
+															<label for="checkbox-all12" class="custom-control-label">&nbsp; No</label>
+														</div>														
+													</div>													
+												</div>
+
+											</div>									
+										</div>
+									</div>
+
+									<div class="TransferCompany_Info_row">
+										<h5>TRANSFER COMPANY INFORMATION:</h5>
+										<div class="row">
+											<div class="col-lg-4">
+												<div class="form-group">
+													<label for="inpuDatePanel">COMPANY NAME</label>
+													<input type="text" class="form-control" id="inpuDatePanel" placeholder="">
+												</div>											
+											</div>
+											<div class="col-lg-4">
+												<div class="form-group">
+													<label for="inpuDatePanel">ACCEPTING AGENT</label>
+													<input type="text" class="form-control" id="inpuDatePanel" placeholder="">
+												</div>										
+											</div>
+											<div class="col-lg-4">
+												<div class="form-group">
+													<label for="inpuDatePanel">TRANSFER TIME</label>
+													<input type="text" class="form-control" id="inpuDatePanel" placeholder="">
+												</div>										
+											</div>										
+										</div>
+									</div>
+
+								</div>
+
+								<div class="buttons">
+									<button class="btn btn-primary">Send</button>
+									<button class="btn btn-info">Reset</button>
+									<button class="btn btn-danger">Cancel</button>
+								</div>
+							  </div>
+						</div>
+						
+					</div>
+				</div>
+			</form>
+			
+          </div>
+        </section>
+
+      </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2020 <div class="bullet"></div> Powered By <a href="#">Server Pipe</a>
+        </div>
+        <div class="footer-right">
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- General JS Scripts -->
+  <script src="assets/js/app.min.js"></script>
+  <!-- JS Libraies -->
+  <script src="assets/bundles/summernote/summernote-bs4.js"></script>
+  <!-- Page Specific JS File -->
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <!-- Custom JS File -->
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
